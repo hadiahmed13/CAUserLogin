@@ -36,11 +36,21 @@ public class InMemoryUserDataAccessObject implements SignupUserDataAccessInterfa
     }
 
     /**
-     * @param name name of cur user.
+     * Sets the current user based on the given name.
+     *
+     * @param name the name of the current user
      */
     @Override
     public void setCurrentUser(String name) {
         this.currentUser = name;
+    }
+
+    /**
+     * Gets the current user based on the given name.
+     */
+    @Override
+    public String getCurrentUser() {
+        return this.currentUser;
     }
 
     @Override
